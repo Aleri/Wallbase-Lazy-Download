@@ -101,6 +101,7 @@ chrome.extension.sendMessage({}, function(response) {
 					}
 		  	});
 
+			//To mitigate the lazy loading.
 		  	$(document).bind('DOMSubtreeModified',function() {
 				constructObject();
 
@@ -114,6 +115,6 @@ chrome.extension.sendMessage({}, function(response) {
 		}	
 
 	}
-	}, 4);
+	}, 6);
 });
 
